@@ -30,8 +30,9 @@ Table of Contents
 
 # Case Summary
   
-**TLP:WHITE - Disclosure is not limited.**
-| | |
+**TLP:WHITE - Disclosure is not limited.**  
+
+|  |  |
 | :--- | :--- |
 |**Severity** |Medium|
 |**Created By** |admin|
