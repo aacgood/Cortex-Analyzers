@@ -1,0 +1,35 @@
+{
+    "name": "Reporter",
+    "version": "0.1",
+    "author": "Adrian Good",
+    "url": "https://github.com/aacgood/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Create a Markdown Report of the current case",
+    "dataTypeList": ["thehive:case"],
+    "command": "Reporter/reporter.py",
+    "baseConfig": "Reporter",
+    "configurationItems": [
+      {
+        "name": "tmp_file_location",
+        "description": "A local path to temporarily store generated files",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "default": "/path/to/file"
+      },
+      {
+        "name": "thehive_instance",
+        "description": "Instance of TheHive",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api",
+        "description": "TheHive API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ]
+}
