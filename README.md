@@ -3,6 +3,12 @@ The following repository contains bespoke Analyzers and Responders that I have d
 # Support
 Files provided as is, do your own due dilligence and code review before trusting some random files from github.  Happy to accept pull requests and suggestions/ideas.
 
+# Listing
+
+| Path                | Description                                  | README File                                                                   | 
+|---------------------|----------------------------------------------|-------------------------------------------------------------------------------|
+| Responders/Reporter | Generate a Markdown report from a given case | <https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/Reporter> |
+
 # Contact and Website
 I can be contacted via [my blog](<https://blog.agood.cloud/contact/>)
 
