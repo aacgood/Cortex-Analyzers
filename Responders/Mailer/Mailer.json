@@ -1,13 +1,13 @@
 {
   "name": "Mailer",
-  "version": "2.0",
+  "version": "2.0.1",
   "author": "Adrian Good",
   "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
   "license": "AGPL-V3",
   "description": "Send an email with information from a TheHive case or alert.  Adapted from Mailer 1.0 originally written by CERT-BDF",
   "dataTypeList": ["thehive:case", "thehive:alert"],
   "command": "Mailer/mailer.py",
-  "baseConfig": "Mailer_New",
+  "baseConfig": "Mailer",
   "configurationItems": [
     {
       "name": "from",
@@ -45,7 +45,7 @@
       "description": "SMTP User",
       "type": "string",
       "multi": false,
-      "required": true,
+      "required": false,
       "defaultValue": ""
     },
     {
@@ -53,7 +53,7 @@
       "description": "SMTP server password",
       "type": "string",
       "multi": false,
-      "required": true,
+      "required": false,
       "defaultValue": ""
     }
   ]

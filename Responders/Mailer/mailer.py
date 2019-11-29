@@ -5,6 +5,8 @@ from cortexutils.responder import Responder
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.utils import formatdate
+from email.utils import make_msgid
 
 
 class Mailer(Responder):
@@ -51,17 +53,26 @@ class Mailer(Responder):
         msg['Subject'] = title
         msg['From'] = self.mail_from
         msg['To'] = mail_to
+        msg['Date'] = formatdate(localtime=True)
+        msg['Message-ID'] = make_msgid()
         msg.attach(MIMEText(description, 'plain'))
+        
         
         s = smtplib.SMTP(self.smtp_host, self.smtp_port)
 
-        if self.smtp_auth:
-            s.starttls()
-            s.login(self.mail_user,self.mail_pass)
+        if(self.smtp_auth):
+            try:
+                s.starttls()
+                s.login(self.mail_user,self.mail_pass)
+            except:
+                self.error('an error occured with SMTP username/password')
             
-        s.sendmail(self.mail_from, [mail_to], msg.as_string())
-        s.quit()
-        self.report({'message': 'message sent'})
+        try:
+            s.sendmail(self.mail_from, [mail_to], msg.as_string())
+            s.quit()
+            self.report({'message': 'message sent'})
+        except:
+            self.error('unable to send email')
 
     def operations(self, raw):
         return [self.build_operation('AddTagToCase', tag='mail sent')]
