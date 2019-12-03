@@ -1,0 +1,4 @@
+requests
+json
+thehive4py
+cortexutils

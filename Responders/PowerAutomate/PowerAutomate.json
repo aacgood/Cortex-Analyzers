@@ -1,0 +1,34 @@
+{
+    "name": "PowerAutomate",
+    "version": "0.2",
+    "author": "Adrian Good",
+    "url": "https://github.com/aacgood/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Sends an Alert to Power Automate",
+    "dataTypeList": ["thehive:alert"],
+    "command": "PowerAutomate/PowerAutomate.py",
+    "baseConfig": "PowerAutomate",
+    "configurationItems": [
+      {
+        "name": "thehive_instance",
+        "description": "URL of the Thehive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "flow_master_controller",
+        "description": "Endposint for the flow to control all flows",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ]
+  }

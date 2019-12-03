@@ -1,8 +1,8 @@
 {
   "name": "Mailer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Adrian Good",
-  "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+  "url": "https://github.com/aacgood/Cortex-Analyzers",
   "license": "AGPL-V3",
   "description": "Send an email with information from a TheHive case or alert.  Adapted from Mailer 1.0 originally written by CERT-BDF",
   "dataTypeList": ["thehive:case", "thehive:alert"],

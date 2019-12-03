@@ -5,10 +5,11 @@ Files provided as is, do your own due dilligence and code review before trusting
 
 # Listing
 
-| Path                | Description                                  | README File                                                                   | 
-|---------------------|----------------------------------------------|-------------------------------------------------------------------------------|
-| Responders/Reporter | Generate a Markdown report from a given case | <https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/Reporter> |
-| Responders/Mailer   | An update of Mailer 1.0 originally written by CERT-BDF, adds SMTP user/pass support | <https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/Mailer> |
+| Path to README           | Description                                  |
+|--------------------------|----------------------------------------------|
+| [Responders/Reporter](<https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/Reporter>)           | Generate a Markdown report from a given case |
+| [Responders/Mailer](<https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/Mailer>)               | An update of Mailer 1.0 originally written by CERT-BDF, adds SMTP user/pass support |
+| [Responders/PowerAutomate](<https://github.com/aacgood/Cortex-Analyzers/tree/master/Responders/PowerAutomate>) | Demo for adding SOAR capability to TheHive Alerts |
 
 # Contact and Website
 I can be contacted via [my blog](<https://blog.agood.cloud/contact/>)
