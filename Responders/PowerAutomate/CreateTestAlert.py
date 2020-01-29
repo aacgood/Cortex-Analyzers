@@ -6,10 +6,10 @@ import json
 import requests
 
 uid = str(uuid.uuid4())
-theHiveURL = '<YOUR HIVE API ENDPOINT>/api/alert'
+theHiveURL = 'https://thehive.agood.cloud/api/alert'
 
 headers = {
-    'Authorization': 'Bearer <API KEY>',
+    'Authorization': 'Bearer sTBeE5pQhJ3+G07foLeeUqwfsSTZHXhs',
     'Content-Type': 'application/json'
 }
 
